@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Persistance;
 using System.IO;
 
 namespace surveynet
@@ -10,6 +12,8 @@ namespace surveynet
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            var connection = @"Server=(localdb)\mssqllocaldb;Database=Surveynet;Trusted_Connection=True;";
+            services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(connection, b => b.MigrationsAssembly("surveynet")));
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
