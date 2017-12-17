@@ -9,6 +9,7 @@
       "outDir": "wwwroot",
       "assets": [
         "assets",
+        "../semantic-ui/dist/semantic.min.css",
         "favicon.ico"
       ],
       "index": "index.html",

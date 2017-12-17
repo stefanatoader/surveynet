@@ -2,13 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import {SuiModule} from 'ng2-semantic-ui';
 import {AuthenticationService} from "./services/authentication/authentication.service";
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    SuiModule
   ],
   providers: [
     AuthenticationService
@@ -16,7 +18,8 @@ import {AuthenticationService} from "./services/authentication/authentication.se
   declarations: [],
   exports: [
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    SuiModule
   ]
 })
 export class SharedModule { }
