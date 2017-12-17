@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/semantic-ui/dist/semantic.min.css';
+
+* {
+  margin: auto;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #ededed;
+}
