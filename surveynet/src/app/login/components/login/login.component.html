@@ -24,7 +24,7 @@
                minlength="6">
         <i class="privacy icon"></i>
       </div>
-      <button (click)="submit()" [ngClass]="{'disabled': loginForm.invalid, 'loading': loading}" class="ui fluid blue button">
+      <button (click)="submit(loginForm)" [ngClass]="{'disabled': loginForm.invalid, 'loading': loading}" class="ui fluid blue button">
         Login
       </button>
       <sui-message *ngIf="error" class="error">

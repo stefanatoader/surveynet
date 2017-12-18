@@ -14,6 +14,7 @@ export class LoginService {
   }
 
   login(loginModel) {
+    console.log(loginModel);
     return this.http.post(this.createTokenURL, loginModel);
   }
 
