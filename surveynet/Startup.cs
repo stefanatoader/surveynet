@@ -23,7 +23,7 @@ namespace surveynet
     public void ConfigureServices(IServiceCollection services)
     {
       services.AddMvc();
-      var connection = @"Server=(localdb)\mssqllocaldb;Database=Surveynet;Trusted_Connection=True;";
+      var connection = Configuration.GetConnectionString("SurveyNet");
       services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(connection, b => b.MigrationsAssembly("surveynet")));
       services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         .AddJwtBearer(options =>

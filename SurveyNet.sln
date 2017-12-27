@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.26730.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "surveynet", "surveynet\surveynet.csproj", "{5B569E39-18B4-49A4-8E7C-C566CF222AA8}"
 EndProject
@@ -12,6 +12,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistance", "Persistance\Persistance.csproj", "{F9824899-2113-4DC1-88F3-131656E593B6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Managers", "Managers\Managers.csproj", "{563C3B28-4BE7-4B19-943E-658B23BE51D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Presentation", "01 - Presentation", "{6592212C-735F-45DB-8495-86EA4C5A68D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Data", "02 - Data", "{56808C00-0D2B-4E6D-99C9-3EE070616127}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Business", "03 - Business", "{4CFD776B-A224-4ACD-86AB-876BF95E7DD1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +48,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5B569E39-18B4-49A4-8E7C-C566CF222AA8} = {6592212C-735F-45DB-8495-86EA4C5A68D1}
+		{E38F24A5-9060-4C6D-87CB-00DBD9F3CED0} = {4CFD776B-A224-4ACD-86AB-876BF95E7DD1}
+		{037F09A2-F14A-431B-86F3-D01E11A7FF49} = {4CFD776B-A224-4ACD-86AB-876BF95E7DD1}
+		{F9824899-2113-4DC1-88F3-131656E593B6} = {56808C00-0D2B-4E6D-99C9-3EE070616127}
+		{563C3B28-4BE7-4B19-943E-658B23BE51D2} = {56808C00-0D2B-4E6D-99C9-3EE070616127}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B041CE79-E0AF-4481-8BDB-DDB66756A87D}
