@@ -1,0 +1,19 @@
+.logo {
+  text-align:center;
+  display: inline-block;
+  h2 {
+    display: inline;
+    margin-left: 10px;
+  }
+  img {
+    width: 40px;
+    height: auto;
+    position:relative;
+    top: 10px;
+  }
+}
+:host.white {
+  .logo h2 {
+    color: #fff;
+  }
+}

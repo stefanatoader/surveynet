@@ -8,6 +8,8 @@ import {RouterModule} from "@angular/router";
 import {CustomFormsModule} from "ng2-validation";
 import {JwtModule, JwtHelperService} from "@auth0/angular-jwt";
 import {AuthGuard} from "./guards/auth.guard";
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { LogoComponent } from './components/logo/logo.component';
 
 @NgModule({
   imports: [
@@ -28,13 +30,15 @@ import {AuthGuard} from "./guards/auth.guard";
     AuthGuard,
     JwtHelperService
   ],
-  declarations: [],
+  declarations: [NavbarComponent, LogoComponent],
   exports: [
     FormsModule,
     HttpClientModule,
     SuiModule,
     RouterModule,
-    CustomFormsModule
+    CustomFormsModule,
+    NavbarComponent,
+    LogoComponent
   ]
 })
 export class SharedModule { }
